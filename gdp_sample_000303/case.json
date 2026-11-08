@@ -1,0 +1,968 @@
+{
+  "source": "existing staged checkpoint and frozen test cache; no retraining",
+  "query_id": "sample_000303",
+  "split": "test",
+  "label_field": "reference_normalized",
+  "truth": 9.4,
+  "prediction_decomposition": {
+    "retrieval_prediction": 9.3711,
+    "visual_directional_adjustment": -0.3566,
+    "visual_prediction": 9.0146,
+    "semantic_query_adjustment": 0.2564,
+    "semantic_pair_adjustment_all_supports": 0.1338,
+    "final_prediction": 9.4048
+  },
+  "absolute_error": {
+    "visual": 0.3854,
+    "final": 0.0048
+  },
+  "query_image_filenames": {
+    "satellite": "12900_29111.png",
+    "street_view": [
+      "CtgyWGUqvehN6ddrUyK80w&35.70756961681103&139.8229326494365&x2.jpg",
+      "U5cK1IrXDDriIIy3N3mo5g&35.70801169462257&139.8315867570047&x2.jpg",
+      "yAym3ClaIigqKHLpsEjGHw&35.71064342484629&139.8293897137746&x2.jpg",
+      "IeYkcR588TNCU6kDLqkaJw&35.7035590605979&139.8317625208376&x2.jpg",
+      "x2y5wbjjQWiI5GxAeEG12A&35.70958946142146&139.8233883522157&x2.jpg",
+      "FBFmSSlr8z6xzHwEfoTsXA&35.70287231932173&139.8278874819102&x2.jpg",
+      "wKnf89oGTPBUO-WwzHc1lw&35.70846507846774&139.8303839757577&x2.jpg",
+      "aTZWiglmPxH0UgLquE4ySw&35.70584691846772&139.8332012114049&x2.jpg",
+      "ylgQP3RAdRxx5-gLb_DsYw&35.70255144381349&139.8337826318357&x2.jpg",
+      "uvZIN9OiCbrJEyQX7GeZOQ&35.70280012328641&139.8236620722298&x2.jpg"
+    ]
+  },
+  "query_semantic_profile": {
+    "region_id": "sample_000303",
+    "sample_index": 303,
+    "source_region_id": "12900_29111",
+    "satellite_image_name": "12900_29111.png",
+    "urban_form": {
+      "building_density": 0.85,
+      "vertical_density": 0.65,
+      "road_density": 0.45,
+      "impervious_surface": 0.75,
+      "block_compactness": 0.7,
+      "urban_sprawl": 0.2
+    },
+    "economic_function": {
+      "commercial_intensity": 0.35,
+      "industrial_intensity": 0.1,
+      "business_activity": 0.3,
+      "night_economy_potential": 0.25,
+      "logistics_activity": 0.15,
+      "land_use_mix": 0.5
+    },
+    "livability": {
+      "residential_quality": 0.65,
+      "building_quality": 0.6,
+      "green_amenity": 0.4,
+      "walkability": 0.7,
+      "street_cleanliness": 0.75,
+      "public_service_access": 0.55
+    },
+    "mobility": {
+      "transport_accessibility": 0.75,
+      "road_hierarchy": 0.6,
+      "parking_intensity": 0.5,
+      "traffic_activity": 0.35,
+      "connectivity": 0.7,
+      "transit_oriented_development": 0.4
+    },
+    "socioeconomic_prior": {
+      "income_level_prior": 0.55,
+      "urban_development_level": 0.75,
+      "informality_probability": 0.15,
+      "energy_consumption_intensity": 0.65,
+      "construction_activity": 0.25,
+      "urban_maturity": 0.8
+    },
+    "uncertainty": 0.1
+  },
+  "top_query_attribute_terms": [
+    {
+      "attribute": "economic_function:land_use_mix",
+      "contribution": 0.1241
+    },
+    {
+      "attribute": "livability:walkability",
+      "contribution": 0.1019
+    },
+    {
+      "attribute": "socioeconomic_prior:energy_consumption_intensity",
+      "contribution": -0.0692
+    },
+    {
+      "attribute": "mobility:transit_oriented_development",
+      "contribution": 0.0667
+    },
+    {
+      "attribute": "urban_form:building_density",
+      "contribution": 0.0643
+    }
+  ],
+  "support_count": 64,
+  "shown_support_count": 3,
+  "shown_support_weight_sum": 0.7032,
+  "supports_by_visual_weight": [
+    {
+      "region_id": "sample_000162",
+      "observed_training_label": 9.8,
+      "visual_weight": 0.3975,
+      "visual_potential_difference": -0.2629,
+      "weighted_label": 3.8956,
+      "weighted_visual_adjustment": -0.1045,
+      "weighted_semantic_pair_adjustment": 0.0879,
+      "image_filenames": {
+        "satellite": "12897_29102.png",
+        "street_view": [
+          "_2jp1czTgX_icTIjPteB0Q&35.7355037734359&139.7280968638189&x2.jpg",
+          "RrgXz32gcejCf7QM-tanjw&35.72946247187469&139.7321628541611&x2.jpg",
+          "mXaZ9oXwn6-tlymPJB8jxA&35.72979517239413&139.7312060796013&x2.jpg",
+          "47vnPZleJQcbNpI43fhBtQ&35.73616659363024&139.7349496240702&x2.jpg",
+          "vqwZwigJPJQMmpnTkzJm-g&35.73368428775683&139.7326402338493&x2.jpg",
+          "hxeGd1Lw5nTlkc5x9ou53Q&35.73343815369015&139.7323727791448&x2.jpg",
+          "EWMn4Wr7nKxZYlu99U2eDg&35.7328426004128&139.7244129099601&x2.jpg",
+          "j2NOETlP181ZKDlRr4yJCg&35.73581067419652&139.7260253910278&x2.jpg",
+          "0n75JyKPRGMTXNt9B_ulDA&35.73100080140046&139.7266915031792&x2.jpg",
+          "fDOG7w4po06wVkUutqRvQQ&35.73661575066405&139.729495398326&x2.jpg"
+        ]
+      },
+      "semantic_profile": {
+        "region_id": "sample_000162",
+        "sample_index": 162,
+        "source_region_id": "12897_29102",
+        "satellite_image_name": "12897_29102.png",
+        "urban_form": {
+          "building_density": 0.85,
+          "vertical_density": 0.65,
+          "road_density": 0.45,
+          "impervious_surface": 0.75,
+          "block_compactness": 0.8,
+          "urban_sprawl": 0.15
+        },
+        "economic_function": {
+          "commercial_intensity": 0.3,
+          "industrial_intensity": 0.1,
+          "business_activity": 0.35,
+          "night_economy_potential": 0.2,
+          "logistics_activity": 0.1,
+          "land_use_mix": 0.4
+        },
+        "livability": {
+          "residential_quality": 0.75,
+          "building_quality": 0.7,
+          "green_amenity": 0.55,
+          "walkability": 0.8,
+          "street_cleanliness": 0.7,
+          "public_service_access": 0.6
+        },
+        "mobility": {
+          "transport_accessibility": 0.65,
+          "road_hierarchy": 0.5,
+          "parking_intensity": 0.6,
+          "traffic_activity": 0.3,
+          "connectivity": 0.7,
+          "transit_oriented_development": 0.4
+        },
+        "socioeconomic_prior": {
+          "income_level_prior": 0.7,
+          "urban_development_level": 0.8,
+          "informality_probability": 0.1,
+          "energy_consumption_intensity": 0.65,
+          "construction_activity": 0.2,
+          "urban_maturity": 0.85
+        },
+        "uncertainty": 0.1
+      },
+      "top_pair_attribute_terms": [
+        {
+          "attribute": "livability:green_amenity",
+          "query_score": 0.4,
+          "support_score": 0.55,
+          "weighted_contribution": 0.0285
+        },
+        {
+          "attribute": "economic_function:land_use_mix",
+          "query_score": 0.5,
+          "support_score": 0.4,
+          "weighted_contribution": 0.0252
+        },
+        {
+          "attribute": "socioeconomic_prior:income_level_prior",
+          "query_score": 0.55,
+          "support_score": 0.7,
+          "weighted_contribution": 0.0174
+        },
+        {
+          "attribute": "economic_function:logistics_activity",
+          "query_score": 0.15,
+          "support_score": 0.1,
+          "weighted_contribution": 0.0116
+        },
+        {
+          "attribute": "economic_function:night_economy_potential",
+          "query_score": 0.25,
+          "support_score": 0.2,
+          "weighted_contribution": -0.0106
+        }
+      ]
+    },
+    {
+      "region_id": "sample_000207",
+      "observed_training_label": 9.3,
+      "visual_weight": 0.2551,
+      "visual_potential_difference": -0.7999,
+      "weighted_label": 2.3725,
+      "weighted_visual_adjustment": -0.2041,
+      "weighted_semantic_pair_adjustment": -0.0058,
+      "image_filenames": {
+        "satellite": "12895_29100.png",
+        "street_view": [
+          "SQ2NYht9BZwUVkkzTBz-6Q&35.75313615171221&139.7066572434044&x2.jpg",
+          "b7tgyG467AHrEN7nlLW-2g&35.75057983193906&139.7123497976861&x2.jpg",
+          "KqoSAn9MK8et1ibs3pMLUg&35.75191773725979&139.7033586602316&x2.jpg",
+          "R1P7dEDn_531pHBeubnu6g&35.75441412319287&139.7024328927512&x2.jpg",
+          "Y7k2vQR3zXC11SLX2yisfg&35.75523966910936&139.7077950966139&x2.jpg",
+          "y1XiR8HAG4Y1A779yfuQuQ&35.74730365629845&139.7089159848391&x2.jpg",
+          "SyGBIRe7QD2h-f7KXoT-bA&35.75456080340352&139.7033024063154&x2.jpg",
+          "3DxBAe6BoXK_tGSduoYMwQ&35.74701288872311&139.7068841421955&x2.jpg",
+          "DpSPbpmWP_IYQu8ETt2-Xg&35.7531239193655&139.7105772137354&x2.jpg",
+          "8BHv-GpnNPOkFdI4MhBzRA&35.7517568392327&139.706176255128&x2.jpg"
+        ]
+      },
+      "semantic_profile": {
+        "region_id": "sample_000207",
+        "sample_index": 207,
+        "source_region_id": "12895_29100",
+        "satellite_image_name": "12895_29100.png",
+        "urban_form": {
+          "building_density": 0.85,
+          "vertical_density": 0.65,
+          "road_density": 0.7,
+          "impervious_surface": 0.8,
+          "block_compactness": 0.75,
+          "urban_sprawl": 0.2
+        },
+        "economic_function": {
+          "commercial_intensity": 0.3,
+          "industrial_intensity": 0.1,
+          "business_activity": 0.35,
+          "night_economy_potential": 0.25,
+          "logistics_activity": 0.15,
+          "land_use_mix": 0.5
+        },
+        "livability": {
+          "residential_quality": 0.7,
+          "building_quality": 0.75,
+          "green_amenity": 0.45,
+          "walkability": 0.65,
+          "street_cleanliness": 0.7,
+          "public_service_access": 0.55
+        },
+        "mobility": {
+          "transport_accessibility": 0.8,
+          "road_hierarchy": 0.75,
+          "parking_intensity": 0.6,
+          "traffic_activity": 0.5,
+          "connectivity": 0.85,
+          "transit_oriented_development": 0.6
+        },
+        "socioeconomic_prior": {
+          "income_level_prior": 0.65,
+          "urban_development_level": 0.8,
+          "informality_probability": 0.1,
+          "energy_consumption_intensity": 0.7,
+          "construction_activity": 0.2,
+          "urban_maturity": 0.85
+        },
+        "uncertainty": 0.1
+      },
+      "top_pair_attribute_terms": [
+        {
+          "attribute": "urban_form:road_density",
+          "query_score": 0.45,
+          "support_score": 0.7,
+          "weighted_contribution": -0.0239
+        },
+        {
+          "attribute": "mobility:transit_oriented_development",
+          "query_score": 0.4,
+          "support_score": 0.6,
+          "weighted_contribution": -0.0219
+        },
+        {
+          "attribute": "mobility:traffic_activity",
+          "query_score": 0.35,
+          "support_score": 0.5,
+          "weighted_contribution": 0.0081
+        },
+        {
+          "attribute": "socioeconomic_prior:income_level_prior",
+          "query_score": 0.55,
+          "support_score": 0.65,
+          "weighted_contribution": 0.0074
+        },
+        {
+          "attribute": "livability:green_amenity",
+          "query_score": 0.4,
+          "support_score": 0.45,
+          "weighted_contribution": 0.0061
+        }
+      ]
+    },
+    {
+      "region_id": "sample_000336",
+      "observed_training_label": 9.9,
+      "visual_weight": 0.0506,
+      "visual_potential_difference": 0.0647,
+      "weighted_label": 0.5007,
+      "weighted_visual_adjustment": 0.0033,
+      "weighted_semantic_pair_adjustment": 0.0005,
+      "image_filenames": {
+        "satellite": "12899_29107.png",
+        "street_view": [
+          "GWH-ASWaqwdIGanEk25eCA&35.7189254335244&139.7845861677476&x2.jpg",
+          "9-MveiHs40U_RAMW9l-1Tg&35.71262370929409&139.7809946656261&x2.jpg",
+          "Fffydfvs1LNKJxhG5iNSMA&35.7120326750097&139.7853096592498&x2.jpg",
+          "xLyX3qKXm7C4UTFVYwcwnA&35.71917088136652&139.7826144581814&x2.jpg",
+          "Up-OFvhGGJCar1RMJAPpzg&35.71724859419489&139.7881109409633&x2.jpg",
+          "phl4DxkWltoa3izDobiSdA&35.7133143246236&139.7832344723391&x2.jpg",
+          "5DabDQgcp6p2ojftCpR1MA&35.71756487638654&139.7839863466791&x2.jpg",
+          "J9g6cKlXb2Z_vSx09oSrLA&35.71262058607399&139.7844671861102&x2.jpg",
+          "pwJYdlGXMGPL-I1yuYFmpg&35.7121908836566&139.7837901266104&x2.jpg",
+          "yuN631RKjG_XrWIucbP-Iw&35.71727696504283&139.7838932688481&x2.jpg"
+        ]
+      },
+      "semantic_profile": {
+        "region_id": "sample_000336",
+        "sample_index": 336,
+        "source_region_id": "12899_29107",
+        "satellite_image_name": "12899_29107.png",
+        "urban_form": {
+          "building_density": 0.85,
+          "vertical_density": 0.65,
+          "road_density": 0.45,
+          "impervious_surface": 0.75,
+          "block_compactness": 0.7,
+          "urban_sprawl": 0.15
+        },
+        "economic_function": {
+          "commercial_intensity": 0.4,
+          "industrial_intensity": 0.1,
+          "business_activity": 0.35,
+          "night_economy_potential": 0.25,
+          "logistics_activity": 0.15,
+          "land_use_mix": 0.5
+        },
+        "livability": {
+          "residential_quality": 0.6,
+          "building_quality": 0.55,
+          "green_amenity": 0.3,
+          "walkability": 0.7,
+          "street_cleanliness": 0.75,
+          "public_service_access": 0.5
+        },
+        "mobility": {
+          "transport_accessibility": 0.65,
+          "road_hierarchy": 0.55,
+          "parking_intensity": 0.6,
+          "traffic_activity": 0.3,
+          "connectivity": 0.7,
+          "transit_oriented_development": 0.2
+        },
+        "socioeconomic_prior": {
+          "income_level_prior": 0.55,
+          "urban_development_level": 0.75,
+          "informality_probability": 0.1,
+          "energy_consumption_intensity": 0.65,
+          "construction_activity": 0.2,
+          "urban_maturity": 0.8
+        },
+        "uncertainty": 0.1
+      },
+      "top_pair_attribute_terms": [
+        {
+          "attribute": "mobility:transit_oriented_development",
+          "query_score": 0.4,
+          "support_score": 0.2,
+          "weighted_contribution": 0.0043
+        },
+        {
+          "attribute": "livability:green_amenity",
+          "query_score": 0.4,
+          "support_score": 0.3,
+          "weighted_contribution": -0.0024
+        },
+        {
+          "attribute": "economic_function:business_activity",
+          "query_score": 0.3,
+          "support_score": 0.35,
+          "weighted_contribution": 0.0012
+        },
+        {
+          "attribute": "socioeconomic_prior:informality_probability",
+          "query_score": 0.15,
+          "support_score": 0.1,
+          "weighted_contribution": -0.0009
+        },
+        {
+          "attribute": "mobility:transport_accessibility",
+          "query_score": 0.75,
+          "support_score": 0.65,
+          "weighted_contribution": -0.0008
+        }
+      ]
+    },
+    {
+      "region_id": "sample_000389",
+      "observed_training_label": 9.3,
+      "visual_weight": 0.0429,
+      "visual_potential_difference": -0.1906,
+      "weighted_label": 0.3987,
+      "weighted_visual_adjustment": -0.0082,
+      "weighted_semantic_pair_adjustment": -0.0002
+    },
+    {
+      "region_id": "sample_000499",
+      "observed_training_label": 9.7,
+      "visual_weight": 0.0299,
+      "visual_potential_difference": -0.7686,
+      "weighted_label": 0.2901,
+      "weighted_visual_adjustment": -0.023,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000168",
+      "observed_training_label": 9.2,
+      "visual_weight": 0.0291,
+      "visual_potential_difference": -0.2819,
+      "weighted_label": 0.2679,
+      "weighted_visual_adjustment": -0.0082,
+      "weighted_semantic_pair_adjustment": 0.0079
+    },
+    {
+      "region_id": "sample_000686",
+      "observed_training_label": 8.6,
+      "visual_weight": 0.0243,
+      "visual_potential_difference": 0.2812,
+      "weighted_label": 0.2087,
+      "weighted_visual_adjustment": 0.0068,
+      "weighted_semantic_pair_adjustment": 0.0046
+    },
+    {
+      "region_id": "sample_000622",
+      "observed_training_label": 8.3,
+      "visual_weight": 0.0216,
+      "visual_potential_difference": -0.0998,
+      "weighted_label": 0.1796,
+      "weighted_visual_adjustment": -0.0022,
+      "weighted_semantic_pair_adjustment": 0.0032
+    },
+    {
+      "region_id": "sample_000768",
+      "observed_training_label": 9.6,
+      "visual_weight": 0.0184,
+      "visual_potential_difference": -0.6867,
+      "weighted_label": 0.1766,
+      "weighted_visual_adjustment": -0.0126,
+      "weighted_semantic_pair_adjustment": 0.0006
+    },
+    {
+      "region_id": "sample_000910",
+      "observed_training_label": 8.2,
+      "visual_weight": 0.017,
+      "visual_potential_difference": 0.1747,
+      "weighted_label": 0.1396,
+      "weighted_visual_adjustment": 0.003,
+      "weighted_semantic_pair_adjustment": 0.0036
+    },
+    {
+      "region_id": "sample_000477",
+      "observed_training_label": 8.0,
+      "visual_weight": 0.0084,
+      "visual_potential_difference": -0.3496,
+      "weighted_label": 0.0672,
+      "weighted_visual_adjustment": -0.0029,
+      "weighted_semantic_pair_adjustment": 0.0012
+    },
+    {
+      "region_id": "sample_000429",
+      "observed_training_label": 8.5,
+      "visual_weight": 0.0075,
+      "visual_potential_difference": -0.2224,
+      "weighted_label": 0.0633,
+      "weighted_visual_adjustment": -0.0017,
+      "weighted_semantic_pair_adjustment": 0.0033
+    },
+    {
+      "region_id": "sample_000467",
+      "observed_training_label": 9.0,
+      "visual_weight": 0.0074,
+      "visual_potential_difference": -0.2644,
+      "weighted_label": 0.0665,
+      "weighted_visual_adjustment": -0.002,
+      "weighted_semantic_pair_adjustment": 0.0023
+    },
+    {
+      "region_id": "sample_000902",
+      "observed_training_label": 7.4,
+      "visual_weight": 0.0056,
+      "visual_potential_difference": -0.1888,
+      "weighted_label": 0.0418,
+      "weighted_visual_adjustment": -0.0011,
+      "weighted_semantic_pair_adjustment": 0.0013
+    },
+    {
+      "region_id": "sample_000325",
+      "observed_training_label": 8.8,
+      "visual_weight": 0.0054,
+      "visual_potential_difference": -0.2258,
+      "weighted_label": 0.0474,
+      "weighted_visual_adjustment": -0.0012,
+      "weighted_semantic_pair_adjustment": 0.0033
+    },
+    {
+      "region_id": "sample_000206",
+      "observed_training_label": 4.8,
+      "visual_weight": 0.0052,
+      "visual_potential_difference": 1.1525,
+      "weighted_label": 0.0251,
+      "weighted_visual_adjustment": 0.006,
+      "weighted_semantic_pair_adjustment": 0.0026
+    },
+    {
+      "region_id": "sample_000715",
+      "observed_training_label": 9.1,
+      "visual_weight": 0.0043,
+      "visual_potential_difference": -0.4212,
+      "weighted_label": 0.0395,
+      "weighted_visual_adjustment": -0.0018,
+      "weighted_semantic_pair_adjustment": 0.0013
+    },
+    {
+      "region_id": "sample_000820",
+      "observed_training_label": 9.3,
+      "visual_weight": 0.0037,
+      "visual_potential_difference": -0.1224,
+      "weighted_label": 0.0348,
+      "weighted_visual_adjustment": -0.0005,
+      "weighted_semantic_pair_adjustment": -0.0002
+    },
+    {
+      "region_id": "sample_000279",
+      "observed_training_label": 7.9,
+      "visual_weight": 0.0034,
+      "visual_potential_difference": -0.1591,
+      "weighted_label": 0.027,
+      "weighted_visual_adjustment": -0.0005,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000755",
+      "observed_training_label": 7.8,
+      "visual_weight": 0.0033,
+      "visual_potential_difference": -0.1628,
+      "weighted_label": 0.0256,
+      "weighted_visual_adjustment": -0.0005,
+      "weighted_semantic_pair_adjustment": 0.0006
+    },
+    {
+      "region_id": "sample_000896",
+      "observed_training_label": 9.6,
+      "visual_weight": 0.0033,
+      "visual_potential_difference": -0.4733,
+      "weighted_label": 0.0313,
+      "weighted_visual_adjustment": -0.0015,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000677",
+      "observed_training_label": 8.5,
+      "visual_weight": 0.0031,
+      "visual_potential_difference": -0.3529,
+      "weighted_label": 0.0261,
+      "weighted_visual_adjustment": -0.0011,
+      "weighted_semantic_pair_adjustment": 0.001
+    },
+    {
+      "region_id": "sample_000854",
+      "observed_training_label": 9.6,
+      "visual_weight": 0.0028,
+      "visual_potential_difference": -0.1161,
+      "weighted_label": 0.0271,
+      "weighted_visual_adjustment": -0.0003,
+      "weighted_semantic_pair_adjustment": 0.0008
+    },
+    {
+      "region_id": "sample_000472",
+      "observed_training_label": 5.9,
+      "visual_weight": 0.0028,
+      "visual_potential_difference": 0.0781,
+      "weighted_label": 0.0165,
+      "weighted_visual_adjustment": 0.0002,
+      "weighted_semantic_pair_adjustment": 0.0015
+    },
+    {
+      "region_id": "sample_000752",
+      "observed_training_label": 9.3,
+      "visual_weight": 0.0026,
+      "visual_potential_difference": 0.8864,
+      "weighted_label": 0.0241,
+      "weighted_visual_adjustment": 0.0023,
+      "weighted_semantic_pair_adjustment": 0.0004
+    },
+    {
+      "region_id": "sample_000227",
+      "observed_training_label": 9.5,
+      "visual_weight": 0.0026,
+      "visual_potential_difference": 0.0269,
+      "weighted_label": 0.0244,
+      "weighted_visual_adjustment": 0.0001,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000660",
+      "observed_training_label": 9.0,
+      "visual_weight": 0.0026,
+      "visual_potential_difference": -0.4151,
+      "weighted_label": 0.023,
+      "weighted_visual_adjustment": -0.0011,
+      "weighted_semantic_pair_adjustment": 0.0008
+    },
+    {
+      "region_id": "sample_000843",
+      "observed_training_label": 9.7,
+      "visual_weight": 0.0025,
+      "visual_potential_difference": 0.1675,
+      "weighted_label": 0.0246,
+      "weighted_visual_adjustment": 0.0004,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000283",
+      "observed_training_label": 8.8,
+      "visual_weight": 0.0024,
+      "visual_potential_difference": 0.7558,
+      "weighted_label": 0.0214,
+      "weighted_visual_adjustment": 0.0018,
+      "weighted_semantic_pair_adjustment": 0.0007
+    },
+    {
+      "region_id": "sample_000178",
+      "observed_training_label": 7.9,
+      "visual_weight": 0.0024,
+      "visual_potential_difference": -0.4538,
+      "weighted_label": 0.019,
+      "weighted_visual_adjustment": -0.0011,
+      "weighted_semantic_pair_adjustment": 0.0004
+    },
+    {
+      "region_id": "sample_000688",
+      "observed_training_label": 9.2,
+      "visual_weight": 0.0023,
+      "visual_potential_difference": -0.8257,
+      "weighted_label": 0.0213,
+      "weighted_visual_adjustment": -0.0019,
+      "weighted_semantic_pair_adjustment": 0.0004
+    },
+    {
+      "region_id": "sample_000135",
+      "observed_training_label": 8.1,
+      "visual_weight": 0.0023,
+      "visual_potential_difference": -0.1422,
+      "weighted_label": 0.0187,
+      "weighted_visual_adjustment": -0.0003,
+      "weighted_semantic_pair_adjustment": 0.0007
+    },
+    {
+      "region_id": "sample_000258",
+      "observed_training_label": 8.2,
+      "visual_weight": 0.0022,
+      "visual_potential_difference": 0.0678,
+      "weighted_label": 0.0184,
+      "weighted_visual_adjustment": 0.0002,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000235",
+      "observed_training_label": 7.9,
+      "visual_weight": 0.0018,
+      "visual_potential_difference": 0.5666,
+      "weighted_label": 0.0145,
+      "weighted_visual_adjustment": 0.001,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000089",
+      "observed_training_label": 7.0,
+      "visual_weight": 0.0018,
+      "visual_potential_difference": -0.0752,
+      "weighted_label": 0.0124,
+      "weighted_visual_adjustment": -0.0001,
+      "weighted_semantic_pair_adjustment": 0.0005
+    },
+    {
+      "region_id": "sample_000383",
+      "observed_training_label": 8.2,
+      "visual_weight": 0.0017,
+      "visual_potential_difference": -0.2066,
+      "weighted_label": 0.0135,
+      "weighted_visual_adjustment": -0.0003,
+      "weighted_semantic_pair_adjustment": 0.0006
+    },
+    {
+      "region_id": "sample_000238",
+      "observed_training_label": 9.4,
+      "visual_weight": 0.0016,
+      "visual_potential_difference": -0.7875,
+      "weighted_label": 0.0153,
+      "weighted_visual_adjustment": -0.0013,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000124",
+      "observed_training_label": 8.7,
+      "visual_weight": 0.0014,
+      "visual_potential_difference": 0.2666,
+      "weighted_label": 0.0122,
+      "weighted_visual_adjustment": 0.0004,
+      "weighted_semantic_pair_adjustment": -0.0001
+    },
+    {
+      "region_id": "sample_000687",
+      "observed_training_label": 8.4,
+      "visual_weight": 0.0014,
+      "visual_potential_difference": 0.0781,
+      "weighted_label": 0.0116,
+      "weighted_visual_adjustment": 0.0001,
+      "weighted_semantic_pair_adjustment": 0.0007
+    },
+    {
+      "region_id": "sample_000879",
+      "observed_training_label": 8.5,
+      "visual_weight": 0.0013,
+      "visual_potential_difference": 0.6332,
+      "weighted_label": 0.0112,
+      "weighted_visual_adjustment": 0.0008,
+      "weighted_semantic_pair_adjustment": 0.0006
+    },
+    {
+      "region_id": "sample_000991",
+      "observed_training_label": 9.8,
+      "visual_weight": 0.0013,
+      "visual_potential_difference": 0.1214,
+      "weighted_label": 0.0127,
+      "weighted_visual_adjustment": 0.0002,
+      "weighted_semantic_pair_adjustment": 0.0009
+    },
+    {
+      "region_id": "sample_000811",
+      "observed_training_label": 7.2,
+      "visual_weight": 0.0013,
+      "visual_potential_difference": 0.1008,
+      "weighted_label": 0.0092,
+      "weighted_visual_adjustment": 0.0001,
+      "weighted_semantic_pair_adjustment": 0.0003
+    },
+    {
+      "region_id": "sample_000983",
+      "observed_training_label": 8.1,
+      "visual_weight": 0.0012,
+      "visual_potential_difference": -0.411,
+      "weighted_label": 0.0099,
+      "weighted_visual_adjustment": -0.0005,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000555",
+      "observed_training_label": 9.4,
+      "visual_weight": 0.0012,
+      "visual_potential_difference": -0.1395,
+      "weighted_label": 0.0109,
+      "weighted_visual_adjustment": -0.0002,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000228",
+      "observed_training_label": 8.6,
+      "visual_weight": 0.0011,
+      "visual_potential_difference": 0.0072,
+      "weighted_label": 0.0095,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000268",
+      "observed_training_label": 9.1,
+      "visual_weight": 0.001,
+      "visual_potential_difference": -0.2208,
+      "weighted_label": 0.0095,
+      "weighted_visual_adjustment": -0.0002,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000398",
+      "observed_training_label": 7.0,
+      "visual_weight": 0.0009,
+      "visual_potential_difference": 0.3091,
+      "weighted_label": 0.0065,
+      "weighted_visual_adjustment": 0.0003,
+      "weighted_semantic_pair_adjustment": 0.0006
+    },
+    {
+      "region_id": "sample_000185",
+      "observed_training_label": 5.5,
+      "visual_weight": 0.0009,
+      "visual_potential_difference": 0.4224,
+      "weighted_label": 0.0051,
+      "weighted_visual_adjustment": 0.0004,
+      "weighted_semantic_pair_adjustment": 0.0004
+    },
+    {
+      "region_id": "sample_000885",
+      "observed_training_label": 8.4,
+      "visual_weight": 0.0009,
+      "visual_potential_difference": -0.0897,
+      "weighted_label": 0.0077,
+      "weighted_visual_adjustment": -0.0001,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000645",
+      "observed_training_label": 8.6,
+      "visual_weight": 0.0009,
+      "visual_potential_difference": 0.1231,
+      "weighted_label": 0.0078,
+      "weighted_visual_adjustment": 0.0001,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000565",
+      "observed_training_label": 9.2,
+      "visual_weight": 0.0007,
+      "visual_potential_difference": 0.5234,
+      "weighted_label": 0.0062,
+      "weighted_visual_adjustment": 0.0004,
+      "weighted_semantic_pair_adjustment": -0.0001
+    },
+    {
+      "region_id": "sample_000544",
+      "observed_training_label": 9.1,
+      "visual_weight": 0.0006,
+      "visual_potential_difference": -0.2816,
+      "weighted_label": 0.0055,
+      "weighted_visual_adjustment": -0.0002,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000166",
+      "observed_training_label": 8.0,
+      "visual_weight": 0.0006,
+      "visual_potential_difference": -0.349,
+      "weighted_label": 0.0045,
+      "weighted_visual_adjustment": -0.0002,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000409",
+      "observed_training_label": 5.6,
+      "visual_weight": 0.0004,
+      "visual_potential_difference": 0.9869,
+      "weighted_label": 0.0023,
+      "weighted_visual_adjustment": 0.0004,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000884",
+      "observed_training_label": 3.9,
+      "visual_weight": 0.0004,
+      "visual_potential_difference": 1.4248,
+      "weighted_label": 0.0016,
+      "weighted_visual_adjustment": 0.0006,
+      "weighted_semantic_pair_adjustment": 0.0002
+    },
+    {
+      "region_id": "sample_000079",
+      "observed_training_label": 8.4,
+      "visual_weight": 0.0004,
+      "visual_potential_difference": 0.0787,
+      "weighted_label": 0.003,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000034",
+      "observed_training_label": 8.0,
+      "visual_weight": 0.0002,
+      "visual_potential_difference": -0.3664,
+      "weighted_label": 0.0017,
+      "weighted_visual_adjustment": -0.0001,
+      "weighted_semantic_pair_adjustment": 0.0001
+    },
+    {
+      "region_id": "sample_000105",
+      "observed_training_label": 6.0,
+      "visual_weight": 0.0002,
+      "visual_potential_difference": -0.0486,
+      "weighted_label": 0.0009,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000011",
+      "observed_training_label": 7.5,
+      "visual_weight": 0.0001,
+      "visual_potential_difference": 0.0238,
+      "weighted_label": 0.0007,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000425",
+      "observed_training_label": 7.1,
+      "visual_weight": 0.0001,
+      "visual_potential_difference": -0.1359,
+      "weighted_label": 0.0005,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000788",
+      "observed_training_label": 6.8,
+      "visual_weight": 0.0,
+      "visual_potential_difference": 0.4137,
+      "weighted_label": 0.0003,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000675",
+      "observed_training_label": 8.1,
+      "visual_weight": 0.0,
+      "visual_potential_difference": -0.0374,
+      "weighted_label": 0.0002,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000642",
+      "observed_training_label": 4.9,
+      "visual_weight": 0.0,
+      "visual_potential_difference": 0.7533,
+      "weighted_label": 0.0001,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    },
+    {
+      "region_id": "sample_000616",
+      "observed_training_label": 6.9,
+      "visual_weight": 0.0,
+      "visual_potential_difference": 0.2259,
+      "weighted_label": 0.0,
+      "weighted_visual_adjustment": 0.0,
+      "weighted_semantic_pair_adjustment": 0.0
+    }
+  ],
+  "interpretation": "Weights sum to one over all supports and are not calibrated confidence. Signed semantic adjustments may be positive or negative. Image files are not copied.",
+  "display_note": "Floating-point values are rounded to 4 decimal places for reading; very small values may display as 0.0. Use the original file for exact arithmetic."
+}

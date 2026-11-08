@@ -60,3 +60,45 @@ The script first selects balanced satellite and street view supports according t
 
 Defaults are `K=64`, AdamW learning rates
 `2e-2/1e-3/2e-3`, batch size 16, patience 15, and seed 41.
+
+## An Inspectable GDP Prediction
+
+The following held-out test example shows how UrbanMIL predicts the `reference_normalized` GDP value for region `sample_000303`. It is an illustrative case; the reported evaluation metrics are computed over the full test set.
+
+| Prediction step | Value |
+|---|---:|
+| Weighted average of retrieved labels | 9.3711 |
+| Directional visual adjustment | −0.3566 |
+| Visual prediction | 9.0146 |
+| Query semantic adjustment | +0.2564 |
+| Query–support semantic adjustment, across all 64 supports | +0.1338 |
+| **Final prediction** | **9.4048** |
+| Ground truth | 9.4000 |
+
+The absolute error decreases from 0.3854 for the visual prediction to 0.0048 for the final prediction. Values in this table are rounded, so displayed sums may differ slightly in the last decimal place.
+
+The images below show the query and its three highest-weight retrieved regions. Each montage contains one satellite image and ten street view images.
+
+<table>
+<tr>
+<td><strong>Query: sample_000303</strong><br><a href="gdp_sample_000303/images/query.png"><img src="gdp_sample_000303/images/query.png" width="260" alt="Query satellite and street view images"></a></td>
+<td><strong>Support 1: sample_000162</strong><br><a href="gdp_sample_000303/images/support_01_sample_000162.png"><img src="gdp_sample_000303/images/support_01_sample_000162.png" width="260" alt="First support satellite and street view images"></a></td>
+</tr>
+<tr>
+<td><strong>Support 2: sample_000207</strong><br><a href="gdp_sample_000303/images/support_02_sample_000207.png"><img src="gdp_sample_000303/images/support_02_sample_000207.png" width="260" alt="Second support satellite and street view images"></a></td>
+<td><strong>Support 3: sample_000336</strong><br><a href="gdp_sample_000303/images/support_03_sample_000336.png"><img src="gdp_sample_000303/images/support_03_sample_000336.png" width="260" alt="Third support satellite and street view images"></a></td>
+</tr>
+</table>
+
+
+| Retrieved region | Observed GDP label | Visual weight | Weighted visual adjustment | Weighted semantic pair adjustment |
+|---|---:|---:|---:|---:|
+| `sample_000162` | 9.800 | 0.3975 | −0.1045 | +0.0879 |
+| `sample_000207` | 9.300 | 0.2551 | −0.2041 | −0.0058 |
+| `sample_000336` | 9.900 | 0.0506 | +0.0033 | +0.0005 |
+
+Each visual weight determines how strongly a retrieved region contributes to the prediction. The two adjustment columns show that region's signed contribution to the visual and semantic corrections; the final prediction aggregates all 64 supports and adds a separate query-level semantic adjustment.
+
+These three regions account for 70.32% of the visual support weight. The weights express relative contributions among the 64 retrieved regions. Semantic adjustments are signed learned contributions, not causal effects. For example, the query and first support have MLLM-estimated land-use-mix scores of 0.50 and 0.40, respectively; this attribute contributes +0.0252 to that support's weighted semantic adjustment.
+
+The [case data](gdp_sample_000303/case.json) contains the full semantic profiles, support-level calculations, and prediction decomposition. The [case explanation](gdp_sample_000303/case.md) provides a shorter text summary.
