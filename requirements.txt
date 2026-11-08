@@ -1,0 +1,7 @@
+numpy
+Pillow
+torch
+timm
+transformers
+accelerate
+qwen-vl-utils==0.0.14
